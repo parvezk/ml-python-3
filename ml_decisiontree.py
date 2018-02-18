@@ -34,3 +34,8 @@ def plot_corr(df, size=11):
     plt.setp(ax.get_xticklabels(), fontsize=8, rotation='vertical')
 
 plot_corr(df)
+
+del df['OVER_15MINS_CALLS_PER_MONTH']
+del df['AVERAGE_CALL_DURATION']
+
+df.head(2)
